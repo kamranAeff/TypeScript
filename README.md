@@ -1,6 +1,8 @@
 # TypeScript
+http://www.typescriptlang.org
 
- 1. Intro  
+
+ 1. Intro & Initialize working environment  
  2. Create TypeScript file  
  3. Working with variable,declarations and types  
  4. Working with Enums and Arrays  
