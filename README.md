@@ -1,7 +1,7 @@
 # TypeScript
 
  1. [İlkin anlayışlar və mühitin yaradılması](/docs/intro.md)
- 2. Yeni typescript faylının yaradılması
+ 2. [Yeni typescript faylının yaradılması](/docs/createfile.md)
  3. Dəyişənlər,onların təyin edilməsi və tiplərin seçilməsi
  4. if
  5. switch
