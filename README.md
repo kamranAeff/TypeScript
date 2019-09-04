@@ -15,18 +15,18 @@
     - Funksiyaya göndərilən **rest** parameterlər
     - Anonim və lambda funksiyalar
  10. Obyektyönümlü programlaşdırma
-    - Classlar
-    - Əlçatımlılıq dərəcələri (**Access Modifiers**)
-    - Ana sinifdəki classdan miras alınmış funkiyaların əvələnməsi (Overriding)
-    - Funksiyaların əlavə yüklənməsi (Overloading)
-    - Static xüsusiyyətlər(**property**) və metodlar
-    - Readonly xüsusiyyətlər
-    - Abstrakt yanaşma,abstract classlar və metodlar
-    - İnterfeyslər
-    - Enumlar
-    - Tip əsaslı (Generic) yanaşma
-    - OOP prinsipləri
-        - Abstraksiya (Abstraction)
+    - Classlar  
+    - Əlçatımlılıq dərəcələri (**Access Modifiers**)  
+    - Ana sinifdəki classdan miras alınmış funkiyaların əvələnməsi (Overriding)  
+    - Funksiyaların əlavə yüklənməsi (Overloading)  
+    - Static xüsusiyyətlər(**property**) və metodlar  
+    - Readonly xüsusiyyətlər  
+    - Abstrakt yanaşma,abstract classlar və metodlar  
+    - İnterfeyslər  
+    - Enumlar  
+    - Tip əsaslı (Generic) yanaşma  
+    - OOP prinsipləri  
+        - Abstraksiya (Abstraction)  
         - Enkapsulasiya (Encapsulation)
         - Miraslıq (Inheritance)
         - Plimorfizim (Polimorphism)
