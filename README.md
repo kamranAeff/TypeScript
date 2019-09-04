@@ -14,7 +14,7 @@
     - Funksiyalara parameter göndərmək
     - Funksiyaya göndərilən **rest** parameterlər
     - Anonim və lambda funksiyalar
- 10. Obyektyönümlü programlaşdırma
+ 10. Obyektyönümlü programlaşdırma  
     - Classlar  
     - Əlçatımlılıq dərəcələri (**Access Modifiers**)  
     - Ana sinifdəki classdan miras alınmış funkiyaların əvələnməsi (Overriding)  
