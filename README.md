@@ -1,6 +1,6 @@
 # TypeScript
 
- 1. İlkin anlayışlar
+ 1. İlkin anlayışlar və mühitin yaradılması
  2. Yeni typescript faylının yaradılması
  3. Dəyişənlər,onların təyin edilməsi və tiplərin seçilməsi
  4. if
