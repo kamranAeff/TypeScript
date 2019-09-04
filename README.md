@@ -1,6 +1,6 @@
 # TypeScript
 
- 1. İlkin anlayışlar və mühitin yaradılması
+ 1. [İlkin anlayışlar və mühitin yaradılması](/docs/intro.md)
  2. Yeni typescript faylının yaradılması
  3. Dəyişənlər,onların təyin edilməsi və tiplərin seçilməsi
  4. if
