@@ -17,18 +17,18 @@
  10. Obyektyönümlü programlaşdırma  
     - Classlar  
     - Əlçatımlılıq dərəcələri (**Access Modifiers**)  
-    - Ana sinifdən miras alınmış funkiyaların əvəzlənməsi (Overriding)  
-    - Funksiyaların əlavə yüklənməsi (Overloading)  
+    - Ana sinifdən miras alınmış funkiyaların əvəzlənməsi (**Overriding**)  
+    - Funksiyaların əlavə yüklənməsi (**Overloading**)  
     - Static xüsusiyyətlər(**property**) və metodlar  
     - Readonly xüsusiyyətlər  
     - Abstrakt yanaşma,abstract classlar və metodlar  
     - İnterfeyslər  
     - Enumlar  
-    - Tip əsaslı (Generic) yanaşma  
+    - Tip əsaslı (**Generic**) yanaşma  
     - OOP prinsipləri  
-        - Abstraksiya (Abstraction)  
-        - Enkapsulasiya (Encapsulation)
-        - Miraslıq (Inheritance)
-        - Plimorfizim (Polimorphism)
+        - Abstraksiya (**Abstraction**)  
+        - Enkapsulasiya (**Encapsulation**)
+        - Miraslıq (**Inheritance**)
+        - Plimorfizim (**Polimorphism**)
  11. Modullar, modulların birləşdirilib minimal ölçülü bir fayl kimi əldə edilməsi
  12. Keçilənlərin təkrarı,InMemoryDatabase-yaradılması və dml funksionallıqlarını əlavə etmək,məlumatların vizuallaşdırılması
