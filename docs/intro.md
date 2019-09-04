@@ -6,4 +6,6 @@ Uyğun programlaşdırma mühitinin yaradılması üçün **Visual studio code**
 
 ```html
     npm install -g typescript
-```
+```  
+
+Artiq biz yeni bir typescript faylı yaradıb uyğun sintaksislə javascript kodu yazaraq kompliyasiya edə bilərik.Növbəti dərsimizdə [Yeni typescript faylının yaradılması](/docs/createfile.md)-dan bəhs edəcəyik.

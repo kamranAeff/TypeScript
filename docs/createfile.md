@@ -1,0 +1,1 @@
+## Yeni typescript faylının yaradılması
