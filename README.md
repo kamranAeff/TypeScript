@@ -1,30 +1,34 @@
 # TypeScript
-http://www.typescriptlang.org
 
-
-
- 1. Intro & Initialize working environment  
- 2. Create TypeScript file  
- 3. Working with variable,declarations and types  
- 4. Working with Enums and Arrays  
- 5. Working with Functions  
- 6. Working with Anonymous and Lambda functions  
- 7. Working with Interfaces  
- 8. Working with Classes  
- 9. Working with Generics  
-10. Working with Modules  
-11. More on Typescript Modules  
-12. Understanding Module loaders of Javascript  
-13. Namespaces in Typescript  
-14. Introduction to Type definitions  
-15. Type definitions with Definitely typed and typings
-
-
-
-```html
-npm install babel-cli babel-preset-es2015 -save-dev
-npm init
-npm run build
-```
-
-
+ 1. İlkin anlayışlar
+ 2. Yeni typescript faylının yaradılması
+ 3. Dəyişənlər,onların təyin edilməsi və tiplərin seçilməsi
+ 4. if
+ 5. switch
+ 6. for loop
+ 7. while loop
+ 8. Typescriptdə Massivlər
+ 9. Funksiyalar
+    - Geri dəyər qaytarmayan funksiyalar
+    - Geri dəyər qaytaran funksiyalar
+    - Funksiyalara parameter göndərmək
+    - Funksiyaya göndərilən **rest** parameterlər
+    - Anonim və lambda funksiyalar
+ 10. Obyektyönümlü programlaşdırma
+    - Classlar
+    - Əlçatımlılıq dərəcələri (**Access Modifiers**)
+    - Ana sinifdəki classdan miras alınmış funkiyaların əvələnməsi (Overriding)
+    - Funksiyaların əlavə yüklənməsi (Overloading)
+    - Static xüsusiyyətlər(**property**) və metodlar
+    - Readonly xüsusiyyətlər
+    - Abstrakt yanaşma,abstract classlar və metodlar
+    - İnterfeyslər
+    - Enumlar
+    - Tip əsaslı (Generic) yanaşma
+    - OOP prinsipləri
+        - Abstraksiya (Abstraction)
+        - Enkapsulasiya (Encapsulation)
+        - Miraslıq (Inheritance)
+        - Plimorfizim (Polimorphism)
+ 11. Modullar, modulların birləşdirilib minimal ölçülü bir fayl kimi əldə edilməsi
+ 12. Keçilənlərin təkrarı,InMemoryDatabase-yaradılması və dml funksionallıqlarını əlavə etmək,məlumatların vizuallaşdırılması
