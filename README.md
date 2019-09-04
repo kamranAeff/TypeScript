@@ -17,7 +17,7 @@
  10. Obyektyönümlü programlaşdırma  
     - Classlar  
     - Əlçatımlılıq dərəcələri (**Access Modifiers**)  
-    - Ana sinifdəki classdan miras alınmış funkiyaların əvələnməsi (Overriding)  
+    - Ana sinifdən miras alınmış funkiyaların əvəzlənməsi (Overriding)  
     - Funksiyaların əlavə yüklənməsi (Overloading)  
     - Static xüsusiyyətlər(**property**) və metodlar  
     - Readonly xüsusiyyətlər  
