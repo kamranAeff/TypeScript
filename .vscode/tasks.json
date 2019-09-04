@@ -1,0 +1,31 @@
+// {
+//         // "command": "${workspaceRoot}/node_modules/.bin/babel",
+//     "command": "start F:/TypeScriptUnionFiles.exe",
+//     "tasks": [
+//         {
+//             "taskName": "run",
+//             "suppressTaskName": true,
+//             "isBuildCommand": true,
+//             "args": [
+//                 "${workspaceRoot}/project.json"
+//             ]
+//         }
+//     ]
+// }
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Union",
+            "type": "shell",
+            "windows": {
+                // "command": "F:/TypeScriptUnionFiles.exe",
+                "command": "F:/1.FullStack/TypeScriptUnionFiles/TypeScriptUnionFiles/bin/Debug/TypeScriptUnionFiles.exe",
+                "args": [
+                    "${workspaceRoot}/ts"
+                ]
+            },
+            "group": "build"
+        }
+    ]
+}

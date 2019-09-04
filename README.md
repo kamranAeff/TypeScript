@@ -2,6 +2,7 @@
 http://www.typescriptlang.org
 
 
+
  1. Intro & Initialize working environment  
  2. Create TypeScript file  
  3. Working with variable,declarations and types  
@@ -17,4 +18,13 @@ http://www.typescriptlang.org
 13. Namespaces in Typescript  
 14. Introduction to Type definitions  
 15. Type definitions with Definitely typed and typings
+
+
+
+```html
+npm install babel-cli babel-preset-es2015 -save-dev
+npm init
+npm run build
+```
+
 

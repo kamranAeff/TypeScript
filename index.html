@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script src="ts/out/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <div style="width:400px; height: 400px;">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+
+    <script>
+
+        // let lbl = report.map(r => {
+        //     return r.saleDate;
+        // });
+
+        // let bColors = report.map(r => {
+        //     return r.backgroundColor;
+        // });
+
+        // let bordColors = report.map(r => {
+        //     return r.borderColor;
+        // });
+
+        // let repData = report.map(r => {
+        //     return r.price;
+        // });
+
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartRepo.labels,
+                datasets: chartRepo.datasets
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        barPercentage: 1,
+                        categoryPercentage: 0.6
+                    }],
+                    // yAxes: chartRepo.yAxes
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
