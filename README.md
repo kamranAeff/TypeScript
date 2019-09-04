@@ -31,4 +31,4 @@
         - Miraslıq (**Inheritance**)
         - Plimorfizim (**Polimorphism**)
  11. Modullar, modulların birləşdirilib minimal ölçülü bir fayl kimi əldə edilməsi
- 12. Keçilənlərin təkrarı,InMemoryDatabase-yaradılması və dml funksionallıqlarını əlavə etmək,məlumatların vizuallaşdırılması
+ 12. Keçilənlərin təkrarı,**InMemoryDatabase**-yaradılması və dml funksionallıqlarını əlavə etmək,məlumatların vizuallaşdırılması
