@@ -31,3 +31,8 @@
         - Polimorfizim (**Polimorphism**)
  10. Modullar, modulların birləşdirilib minimal ölçülü bir fayl kimi əldə edilməsi
  11. Keçilənlərin təkrarı,**InMemoryDatabase**-yaradılması və dml funksionallıqlarını əlavə etmək,məlumatların vizuallaşdırılması
+
+
+ ###### Sources
+
+ [KnockoutJS](https://subscription.packtpub.com/book/application_development/9781784397074/1/ch01lvl1sec12/observables-to-refresh-the-ui-automatically)

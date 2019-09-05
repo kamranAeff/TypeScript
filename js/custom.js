@@ -1,65 +1,120 @@
 function seedData() {
+  if (db.getSaleHistories().length < 1) {
     db.createPerson(new Person(1, "Kamran A-eff"));
     db.createPerson(new Person(2, "Nicat Hüseynli"));
 
-  db.createCategory(
-    new Category(1, "Category Name - 1", "Category Subname - 1")
-  );
-  db.createCategory(
-    new Category(2, "Category Name - 2", "Category Subname - 2")
-  );
+    db.createCategory(
+      new Category(1, "Category Name - 1", "Category Subname - 1")
+    );
+    db.createCategory(
+      new Category(2, "Category Name - 2", "Category Subname - 2")
+    );
 
-  let product1 = new Product(1, "Product-1");
-  product1.setPrice(20);
-  product1.setCategory(db.getCategory(1));
+    let product1 = new Product(1, "Product-1");
+    product1.setPrice(20);
+    product1.setCategory(db.getCategory(1));
 
-  db.createProduct(product1);
+    db.createProduct(product1);
 
-  let product2 = new Product(2, "Product-2");
-  product2.setPrice(22.5);
-  product2.setCategory(db.getCategory(1));
+    let product2 = new Product(2, "Product-2");
+    product2.setPrice(22.5);
+    product2.setCategory(db.getCategory(1));
 
-  db.createProduct(product2);
+    db.createProduct(product2);
 
-  let product3 = new Product(3, "Product-3");
-  product3.setPrice(29.5);
-  product3.setCategory(db.getCategory(2));
+    let product3 = new Product(3, "Product-3");
+    product3.setPrice(29.5);
+    product3.setCategory(db.getCategory(2));
 
-  db.createProduct(product3);
+    db.createProduct(product3);
 
-  
-  db.createSaleHistory(
-    new SaleHistory(1, 1, Extension.getRndInt(0,200), 1, new Date("2018-01-01T12:30:00"))
-  );
-  db.createSaleHistory(
-    new SaleHistory(2, 1, Extension.getRndInt(0,200), 1, new Date("2018-01-03T12:30:00"))
-  );
-  db.createSaleHistory(
-    new SaleHistory(3, 1, Extension.getRndInt(0,200), 1, new Date("2018-01-21T12:30:00"))
-  );
-  db.createSaleHistory(
-    new SaleHistory(4, 1, Extension.getRndInt(0,200), 1, new Date("2018-02-01T12:30:00"))
-  );
-  db.createSaleHistory(
-    new SaleHistory(5, 1, Extension.getRndInt(0,200), 1, new Date("2018-03-03T12:30:00"))
-  );
-  db.createSaleHistory(
-    new SaleHistory(6, 1, Extension.getRndInt(0,200), 1, new Date("2018-04-21T12:30:00"))
-  );
+    db.createSaleHistory(
+      new SaleHistory(
+        1,
+        1,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-01-01T12:30:00")
+      )
+    );
+    db.createSaleHistory(
+      new SaleHistory(
+        2,
+        1,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-01-03T12:30:00")
+      )
+    );
+    db.createSaleHistory(
+      new SaleHistory(
+        3,
+        1,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-01-21T12:30:00")
+      )
+    );
+    db.createSaleHistory(
+      new SaleHistory(
+        4,
+        1,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-02-01T12:30:00")
+      )
+    );
+    db.createSaleHistory(
+      new SaleHistory(
+        5,
+        1,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-03-03T12:30:00")
+      )
+    );
+    db.createSaleHistory(
+      new SaleHistory(
+        6,
+        1,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-04-21T12:30:00")
+      )
+    );
 
-  db.createSaleHistory(
-    new SaleHistory(7, 2, Extension.getRndInt(0,200), 1, new Date("2018-01-01T12:30:00"))
-  );
-  db.createSaleHistory(
-    new SaleHistory(8, 2, Extension.getRndInt(0,200), 1, new Date("2018-01-19T12:30:00"))
-  );
-  db.createSaleHistory(
-    new SaleHistory(8, 2, Extension.getRndInt(0,200), 1, new Date("2018-01-12T12:30:00"))
-  );
+    db.createSaleHistory(
+      new SaleHistory(
+        7,
+        2,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-01-01T12:30:00")
+      )
+    );
+    db.createSaleHistory(
+      new SaleHistory(
+        8,
+        2,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-01-19T12:30:00")
+      )
+    );
+    db.createSaleHistory(
+      new SaleHistory(
+        8,
+        2,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-01-12T12:30:00")
+      )
+    );
 
-  db.createSaleHistory(
-    new SaleHistory(9, 3, 5, 1, new Date("2018-01-12T12:30:00"))
-  );
+    db.createSaleHistory(
+      new SaleHistory(9, 3, 5, 1, new Date("2018-01-12T12:30:00"))
+    );
+  }
 
   function dFormat(d) {
     return `${Extension.formatString(
@@ -80,6 +135,15 @@ function seedData() {
     )}:${Extension.formatString(d.getSeconds().toString(), "00")}`;
   }
 
+  db.createSaleHistory(
+    new SaleHistory(
+        Math.max(...db.getSaleHistories().map(s => s.id)) + 1,
+        1,
+        Extension.getRndInt(0, 200),
+        1,
+        new Date("2018-03-03T12:30:00")
+    )
+);
   let chartRepo = {
     labels: Extension.distinctSimple(
       db.saleHistory.order("date").map(s => dFormat(s.date))
@@ -130,5 +194,5 @@ function seedData() {
     };
   });
 
-  return { report: report, chartRepo: chartRepo };
+  return { report: ko.observable(report), chartRepo: chartRepo };
 }
