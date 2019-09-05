@@ -8,42 +8,65 @@
     <title>Document</title>
 
 
-    <script src="ts/out/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div style="width:400px; height: 400px;">
-        <canvas id="myChart" width="400" height="400"></canvas>
-    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Seller Name</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Sale Date</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach: report">
+                            <tr>
+                                <th scope="row" data-bind="text: id">1</th>
+                                <td data-bind="text: sellerName"></td>
+                                <td data-bind="text: productName"></td>
+                                <td data-bind="text: saleDate"></td>
+                                <td data-bind="text: price"></td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="col-4">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="ts/out/app.js"></script>
+    <script src="js/custom.js"></script>
 
     <script>
-
-        // let lbl = report.map(r => {
-        //     return r.saleDate;
-        // });
-
-        // let bColors = report.map(r => {
-        //     return r.backgroundColor;
-        // });
-
-        // let bordColors = report.map(r => {
-        //     return r.borderColor;
-        // });
-
-        // let repData = report.map(r => {
-        //     return r.price;
-        // });
-
+        repo = seedData();
+        ko.applyBindings(repo);
 
         var ctx = document.getElementById('myChart').getContext('2d');
-
+        
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: chartRepo.labels,
-                datasets: chartRepo.datasets
+                labels: repo.chartRepo.labels,
+                datasets: repo.chartRepo.datasets
             },
             options: {
                 scales: {

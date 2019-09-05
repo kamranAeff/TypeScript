@@ -1,3 +1,32 @@
+interface Array<T> {
+    sort(arg0: (a: any, b: any) => 1 | -1 | 0): T[];
+    order<T>(this: T[], selector: string): Array<T>;
+    
+}
+
+Array.prototype.order = function <T>(selector: string) {
+    var that = this as Array<T>;
+    return that.sort(function(a, b) {
+        if (a[selector] < b[selector]) {
+          return -1;
+        }
+        if (a[selector] > b[selector]) {
+          return 1;
+        }
+        return 0;
+      });
+};
+
+function compareSaleHistory(a, b) {
+    if (a.date < b.date) {
+      return -1;
+    }
+    if (a.date > b.date) {
+      return 1;
+    }
+    return 0;
+  }
+
 class Extension {
     static getIndex<T>(arr: T[], item: T, key: string): number {
 

@@ -6,11 +6,12 @@ import { ICategory } from "./ICategory";
 import { IProduct } from "./IProduct";
 import { ISaleHistory } from "./ISaleHistory";
 import { Extension } from "./Extension";
+import { IPerson } from "./IPerson";
 
 
 
 class InMemoryDb
-    implements ICategory, IProduct, ISaleHistory {
+    implements ICategory, IProduct, ISaleHistory, IPerson {
     categories: Category[];
     products: Product[];
     people: Person[];
@@ -136,6 +137,40 @@ class InMemoryDb
         if (findedIndex == -1)
             throw new Error(`Couldn't find item`);
         return this.saleHistory[findedIndex];
+    }
+
+    
+    createPerson(person: Person): void {
+        this.people.push(person);
+    }
+    updatePerson(person: Person): Person {
+        let findedIndex = Extension.getIndex(this.people, person, "id");
+
+        if (findedIndex != -1) {
+            this.people[findedIndex].name = person.name;
+        }
+        else {
+            throw new Error(`Couldn't find item`);
+        }
+        return this.people[findedIndex];
+    }
+    deletePerson(person: Person): void {
+        let findedIndex = Extension.getIndex(this.people, person, "id");
+        if (findedIndex != -1) {
+            this.people.splice(findedIndex, 1);
+        }
+        else {
+            throw new Error(`Couldn't find item`);
+        }
+    }
+    getPeople(): Person[] {
+        return this.people;
+    }
+    getPerson(id: number): Person {
+        let findedIndex = Extension.getIndexById(this.people, id);
+        if (findedIndex == -1)
+            throw new Error(`Couldn't find item`);
+        return this.people[findedIndex];
     }
 
 }
