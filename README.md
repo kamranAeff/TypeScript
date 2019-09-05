@@ -28,6 +28,6 @@
         - Abstraksiya (**Abstraction**)  
         - Enkapsulasiya (**Encapsulation**)
         - Miraslıq (**Inheritance**)
-        - Plimorfizim (**Polimorphism**)
+        - Polimorfizim (**Polimorphism**)
  10. Modullar, modulların birləşdirilib minimal ölçülü bir fayl kimi əldə edilməsi
  11. Keçilənlərin təkrarı,**InMemoryDatabase**-yaradılması və dml funksionallıqlarını əlavə etmək,məlumatların vizuallaşdırılması
